@@ -7,8 +7,10 @@ interface IButton extends TouchableOpacityProps {
     cor?: boolean
 }
     
-export function ButtonSlide({ onPressI, cor }: IButton) {
+export function ButtonSlide({ onPressI, cor, children }: IButton) {
     return (
-        <TouchableOpacity style={cor ? styles.ballPress : styles.ball} onPress={onPressI} />
+        <TouchableOpacity style={cor ? styles.ballPress : styles.ball} onPress={onPressI}>
+            {children}
+        </TouchableOpacity>
     )
 }

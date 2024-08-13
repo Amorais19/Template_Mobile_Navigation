@@ -4,7 +4,7 @@ import { styleContainer } from "../../styles/GlobalStyles";
 import { styles } from "./styles"
 import { IPagina } from "../../../App";
 
-export function Page2({ setPageI }: IPagina) {
+export function Mensagem({ setPageI }: IPagina) {
     return (
         <View style={styleContainer.container}>
             <View style={styles.flex}>
