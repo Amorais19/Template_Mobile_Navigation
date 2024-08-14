@@ -6,20 +6,24 @@ export const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
+        width: 350
     },
-    text: {
-        color: colors.white,
-        fontSize: 25,
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
-    texto: {
-        color: colors.red,
-        fontSize: 35,
+    item: {
+        backgroundColor: colors.black,
+        width: "100%",
+        marginTop: 10,
+        borderRadius: 10
     },
-    menu: {
-        flexDirection: 'row',
-        marginBottom: 25,
+    itemText: {
+        fontSize: 20,
+        padding: 10
     },
     botao: {
-        paddingHorizontal: 15,
-    },
-});
+        
+    }
+})

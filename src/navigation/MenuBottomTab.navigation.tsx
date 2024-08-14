@@ -1,4 +1,5 @@
 import { createBottomTabNavigator, BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
+import { MessageNavigation } from './message.navigation'
 import { Perfil, Mensagem } from '../screens';
 import { Entypo, Feather } from '@expo/vector-icons';
 import React from 'react'
@@ -20,7 +21,7 @@ export function MenuTabs() {
                 tabBarIcon: () => ( <Entypo name='slideshare' size={24} color='black' />
                 )
             }} />
-            <Tab.Screen name='Perfil' component={Mensagem} options={{
+            <Tab.Screen name='Mensagem' component={MessageNavigation} options={{
                 tabBarIcon: () => ( <Feather name='sliders' size={24} color='black' />
                 )
             }} />
